@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D5293AA62A86162A00CAFD22 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5293AA52A86162A00CAFD22 /* SearchBar.swift */; };
+		D5293AC42A8C937A00CAFD22 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5293AC32A8C937A00CAFD22 /* Model.swift */; };
+		D5293AC82A8C94E100CAFD22 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5293AC72A8C94E100CAFD22 /* Utilities.swift */; };
+		D5293ACA2A8C959900CAFD22 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5293AC92A8C959900CAFD22 /* CardView.swift */; };
 		D55234402A85FF1000C7C7E4 /* Sample_POCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D552343F2A85FF1000C7C7E4 /* Sample_POCApp.swift */; };
 		D55234422A85FF1000C7C7E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55234412A85FF1000C7C7E4 /* ContentView.swift */; };
 		D55234442A85FF1300C7C7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55234432A85FF1300C7C7E4 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		D5293AA52A86162A00CAFD22 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D5293AC32A8C937A00CAFD22 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D5293AC72A8C94E100CAFD22 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		D5293AC92A8C959900CAFD22 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D552343C2A85FF1000C7C7E4 /* Sample POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D552343F2A85FF1000C7C7E4 /* Sample_POCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_POCApp.swift; sourceTree = "<group>"; };
 		D55234412A85FF1000C7C7E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,11 +59,14 @@
 		D552343E2A85FF1000C7C7E4 /* Sample POC */ = {
 			isa = PBXGroup;
 			children = (
+				D5293AA52A86162A00CAFD22 /* SearchBar.swift */,
+				D5293AC32A8C937A00CAFD22 /* Model.swift */,
+				D5293AC72A8C94E100CAFD22 /* Utilities.swift */,
+				D5293AC92A8C959900CAFD22 /* CardView.swift */,
 				D552343F2A85FF1000C7C7E4 /* Sample_POCApp.swift */,
 				D55234412A85FF1000C7C7E4 /* ContentView.swift */,
 				D55234432A85FF1300C7C7E4 /* Assets.xcassets */,
 				D55234452A85FF1300C7C7E4 /* Preview Content */,
-				D5293AA52A86162A00CAFD22 /* SearchBar.swift */,
 			);
 			path = "Sample POC";
 			sourceTree = "<group>";
@@ -140,9 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5293ACA2A8C959900CAFD22 /* CardView.swift in Sources */,
 				D55234422A85FF1000C7C7E4 /* ContentView.swift in Sources */,
 				D55234402A85FF1000C7C7E4 /* Sample_POCApp.swift in Sources */,
 				D5293AA62A86162A00CAFD22 /* SearchBar.swift in Sources */,
+				D5293AC42A8C937A00CAFD22 /* Model.swift in Sources */,
+				D5293AC82A8C94E100CAFD22 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,41 +8,7 @@
 import SwiftUI
 
 
-struct ForHiddenBackground: ViewModifier {
-    func body(content: Content) -> some View {
-        if #available(iOS 16.0, *) {
-            content.scrollContentBackground(.hidden)
-        } else {
-            content.onAppear {
-                UITableView.appearance().backgroundColor = .clear
-            }
-            .onDisappear {
-                UITableView.appearance().backgroundColor = .systemGroupedBackground
-            }
-            
-        }
-        
-    }
-    
-}
 
-
-struct Message: Identifiable, Codable {
-    let id: Int
-    var user: String
-    var text: String
-    
-}
-struct CardView: View{
-    var messages:String
-    var body: some View{
-        VStack{
-            Text(messages)
-            Image(systemName: "cloud.heavyrain.fill")
-                .font(.largeTitle)
-        }
-    }
-}
 enum SearchScope: String, CaseIterable {
     case inbox, favorites
 }
@@ -67,7 +33,7 @@ struct ContentView: View {
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(Color.black, lineWidth:1)
                             )
-                                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                             
                             HStack(spacing: 2) {
                                 ForEach((0..<3), id: \.self) { index in
@@ -107,7 +73,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                }.modifier(ForHiddenBackground()).navigationTitle("Sample").navigationBarTitleDisplayMode(.inline)
+                }.modifier(FormHiddenBackground()).navigationTitle("Sample").navigationBarTitleDisplayMode(.inline)
             })
     }
     
